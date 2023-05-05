@@ -19,8 +19,8 @@ public class NumeroIntero {
 		int sumOdd = 0;
 		int evenNumbers = 0;
 		int oddNumbers = 0;
-		int min = 101;
-		int max = 0;
+		int min = Integer.MAX_VALUE;
+		int max = Integer.MIN_VALUE;
 		
 		 for (int i = 0; i < number; i++) {
 			 int randomNumber = random.nextInt(0, 101);
@@ -40,11 +40,9 @@ public class NumeroIntero {
 			 if (randomNumber < min) {
 	                min = randomNumber;
 	            }
-	            if (randomNumber > max) {
+	         if (randomNumber > max) {
 	                max = randomNumber;
-	            }
-			 
-			 
+	         }
 		 }
 		 
 		 double media = sumTotal / number;
