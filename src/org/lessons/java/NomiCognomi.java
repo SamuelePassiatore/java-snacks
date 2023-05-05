@@ -8,5 +8,13 @@ public class NomiCognomi {
 		  String[] cognomi = {"Rossi", "Verdi", "Blu", "Marroni", "Bianchi", "Grigi"};
 		  
 		  Random random = new Random();
+		  
+		  for(int i = 0; i < 10; i++) {
+			  String nome = nomi[random.nextInt(nomi.length)];
+			  String cognome = cognomi[random.nextInt(cognomi.length)];
+			  
+			  System.out.println(nome + " " + cognome);
+		  }
+		 
 	}
 }
