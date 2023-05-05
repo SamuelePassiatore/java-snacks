@@ -8,8 +8,8 @@ public class Snack8 {
 		
 		Random random = new Random();
 		
-		int[] evenNumbers = new int[10]; 
-	    int[] oddNumbers = new int[10]; 
+		Integer[] evenNumbers = new Integer[10]; 
+	    Integer[] oddNumbers = new Integer[10]; 
 	    int evenIndex = 0; 
         int oddIndex = 0; 
 	        
@@ -19,16 +19,14 @@ public class Snack8 {
 	         System.out.println(randomNumber);
 	         
 	         if (randomNumber % 2 == 0) { 
-	            evenNumbers[evenIndex] = randomNumber; 
-	            evenIndex++; 
+	            evenNumbers[evenIndex++] = randomNumber; 
 	         } else { 
-	            oddNumbers[oddIndex] = randomNumber; 
-	            oddIndex++; 
+	            oddNumbers[oddIndex++] = randomNumber; 
 	         }
 		}
 		
-		System.out.println(Arrays.toString(evenNumbers));
-		System.out.println(Arrays.toString(oddNumbers));
+		System.out.println(Arrays.asList(evenNumbers));
+		System.out.println(Arrays.asList(oddNumbers));
 		
 	}
 }
