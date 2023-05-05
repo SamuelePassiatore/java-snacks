@@ -11,10 +11,6 @@ public class PariDispari {
 		
 		sc.close();
 		
-		System.out.println(
-				val % 2 == 0
-				? val
-				: (val + 1)
-			);
+		System.out.println(val % 2 == 0 ? val : (val + 1));
 	}
 }

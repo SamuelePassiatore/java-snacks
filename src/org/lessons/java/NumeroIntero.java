@@ -12,7 +12,6 @@ public class NumeroIntero {
 	
 		sc.close();
 		
-		int[] numbers = new int[number];
 		Random random = new Random();
 		
 		int sumTotal = 0;
